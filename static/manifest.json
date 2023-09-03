@@ -1,0 +1,33 @@
+{
+    "short_name": "Grades",
+    "name": "grades.gsm.st",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "logo_512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "background_color": "#1c1b1e",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#3367D6",
+    "shortcuts": [
+      {
+        "name": "Schedule Today",
+        "short_name": "Schedule",
+        "description": "Check your schedule for today",
+        "url": "/",
+        "icons": [{ "src": "/icons/logo_192.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "Gradebook",
+        "short_name": "Gradebook",
+        "description": "Check Grades",
+        "url": "/gradebook",
+        "icons": [{ "src": "/icons/logo_192.png", "sizes": "192x192" }]
+      }
+    ],
+    "description": "Check your StudentVue Grades"
+}
