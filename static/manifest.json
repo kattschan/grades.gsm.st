@@ -12,7 +12,7 @@
 	"background_color": "#1c1b1e",
 	"display": "standalone",
 	"scope": "/",
-	"theme_color": "#cfbcff",
+	"theme_color": "#1c1b1e",
 	"shortcuts": [
 		{
 			"name": "Schedule Today",
