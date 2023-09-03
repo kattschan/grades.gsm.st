@@ -14,21 +14,25 @@
 	export let data;
 	console.log(data.gradebook);
 </script>
-
+<a href="/gradebook">
+<button class="transparent square left left-align">
+	<i>arrow_back</i>
+  </button>
+</a>
 <table class="border medium-space">
 	<thead>
 		<tr>
-			<th><b>Class</b></th>
-			<th><b>Teacher</b></th>
+			<th><b>Asignment</b></th>
+			<th><b>Date</b></th>
 			<th><b>Grade</b></th>
 		</tr>
 	</thead>
 	<tbody>
-		{#each data.gradebook.Gradebook.Courses.Course as selected}
+		{#each data.gradebook.Gradebook.Courses.Course[data.selectedCourse-1].Marks.Mark.Assignments.Assignment as selected}
 			<tr>
-				<td><a href="/gradebook/{selected.Period}">{selected.Title}</a></td>
-				<td><a href="/gradebook/{selected.Period}">{selected.Staff}</a></td>
-				<td><a href="/gradebook/{selected.Period}">{selected.Marks.Mark.CalculatedScoreString}</a></td>
+				<td>{selected.Measure}</td>
+				<td>{selected.Date}</td>
+				<td>{selected.Score}</td>
 			</tr>
 		{/each}
 	</tbody>
