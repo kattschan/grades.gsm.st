@@ -2,17 +2,6 @@
 	/** @type {import('./$types').PageData} */
 	export let data;
 	console.log(data.info);
-	// Import onmount
-	import { onMount } from 'svelte';
-	// On mount, alert hi
-	onMount(() => {
-	// If we are not on grades.gsm.st, show any elements with the class .dev
-	if (window.location.hostname !== 'grades.gsm.st') {
-		document.querySelectorAll('.dev').forEach((e) => {
-			e.style.display = 'block';
-		});
-	}
-});
 </script>
 <style>
 	/*Make any elements with class red red*/
@@ -39,7 +28,7 @@
 		<div>Sign Off</div>
 	</a>
 	<a>
-		<div>v0.3 alpha</div>
+		<div>v0.3a alpha</div>
 		<a class="red dev">YOU ARE IN DEVELOPMENT MODE</a>
 	</a>
 </nav>
