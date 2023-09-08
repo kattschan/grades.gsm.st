@@ -14,7 +14,10 @@
 	export let data;
 	console.log(data.gradebook);
 </script>
-
+<svelte:head>
+	<!--Set title to Grades - {data.gradebook.Gradebook.Courses.Course[data.selectedCourse-1].Title}-->
+	<title>Your Grades - gsm.st</title>
+</svelte:head>
 <table class="border medium-space">
 	<thead>
 		<tr>

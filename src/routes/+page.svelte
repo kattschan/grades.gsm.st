@@ -35,7 +35,10 @@
 	export let data;
 	console.log(data.schedule);
 </script>
-
+<svelte:head>
+	<!--Set title to Grades - {data.gradebook.Gradebook.Courses.Course[data.selectedCourse-1].Title}-->
+	<title>Home - gsm.st</title>
+</svelte:head>
 <h2 id="greeting" />
 <h6 id="date" />
 

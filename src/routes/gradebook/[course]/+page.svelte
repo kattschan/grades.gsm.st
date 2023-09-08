@@ -14,17 +14,36 @@
 	export let data;
 	console.log(data.gradebook);
 </script>
+<svelte:head>
+	<!--Set title to Grades - {data.gradebook.Gradebook.Courses.Course[data.selectedCourse-1].Title}-->
+	<title>{data.gradebook.Gradebook.Courses.Course[data.selectedCourse-1].Title} - gsm.st</title>
+</svelte:head>
+<header>
+	<nav>
+		<a href="/gradebook">
+	  <button class="circle transparent">
+		<i>arrow_back</i>
+	  </button>
+	  </a>
+	  <h5 class="max">{data.gradebook.Gradebook.Courses.Course[data.selectedCourse-1].Title}</h5>
+	  </nav>
+	  </header>
+<!--
 <a href="/gradebook">
-<button class="transparent square left left-align">
+	<div class="row">
+<button class="transparent circle">
 	<i>arrow_back</i>
   </button>
-</a>
+  <h4 style="text-overflow:ellipsis;">{data.gradebook.Gradebook.Courses.Course[data.selectedCourse-1].Title}</h4>
+</div>
+</a>-->
 <table class="border medium-space">
 	<thead>
 		<tr>
-			<th><b>Asignment</b></th>
+			<th><b>Assignment</b></th>
 			<th><b>Date</b></th>
 			<th><b>Grade</b></th>
+			<th></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -33,6 +52,11 @@
 				<td>{selected.Measure}</td>
 				<td>{selected.Date}</td>
 				<td>{selected.Score}</td>
+				<th>
+					<button class="circle transparent">
+							<i>calculate</i>
+					</button>
+				</th>
 			</tr>
 		{/each}
 	</tbody>

@@ -39,7 +39,7 @@
 		<div>Sign Off</div>
 	</a>
 	<a>
-		<div>v0.3b alpha</div>
+		<div>v0.4 alpha</div>
 		<a class="red dev" style="display: none">YOU ARE IN DEVELOPMENT MODE</a>
 	</a>
 </nav>

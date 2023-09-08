@@ -7,8 +7,10 @@ export async function load({ cookies }) {
 	}
 	const decoded = atob(cookies.get('account'));
 	const [username, password] = decoded.split(':');
+	const gbData = await gradebook(username, password);
+
 	return {
-		gradebook: JSON.parse(await gradebook(username, password))
+		gradebook: JSON.parse(gbData)
 	};
 }
 
