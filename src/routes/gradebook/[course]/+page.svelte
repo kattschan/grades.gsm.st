@@ -43,7 +43,6 @@
 			<th><b>Assignment</b></th>
 			<th><b>Date</b></th>
 			<th><b>Grade</b></th>
-			<th></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -52,11 +51,6 @@
 				<td>{selected.Measure}</td>
 				<td>{selected.Date}</td>
 				<td>{selected.Score}</td>
-				<th>
-					<button class="circle transparent">
-							<i>calculate</i>
-					</button>
-				</th>
 			</tr>
 		{/each}
 	</tbody>
